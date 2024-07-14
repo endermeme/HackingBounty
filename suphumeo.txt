@@ -1,0 +1,372 @@
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 8.0 (protocol 2.0)
+| vulners:
+|   cpe:/a:openbsd:openssh:8.0:
+|       CVE-2023-38408  9.8     https://vulners.com/cve/CVE-2023-38408
+|       B8190CDB-3EB9-5631-9828-8064A1575B23    9.8     https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23        *EXPLOIT*
+|       8FC9C5AB-3968-5F3C-825E-E8DB5379A623    9.8     https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623        *EXPLOIT*
+|       CVE-2020-15778  7.8     https://vulners.com/cve/CVE-2020-15778
+|       CVE-2019-16905  7.8     https://vulners.com/cve/CVE-2019-16905
+|       SSV:92579       7.5     https://vulners.com/seebug/SSV:92579    *EXPLOIT*
+|       PACKETSTORM:173661      7.5     https://vulners.com/packetstorm/PACKETSTORM:173661    *EXPLOIT*
+|       F0979183-AE88-53B4-86CF-3AF0523F3807    7.5     https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807        *EXPLOIT*
+|       1337DAY-ID-26576        7.5     https://vulners.com/zdt/1337DAY-ID-26576
+        *EXPLOIT*
+|       CVE-2021-41617  7.0     https://vulners.com/cve/CVE-2021-41617
+|       C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3    6.8     https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3        *EXPLOIT*
+|       10213DBE-F683-58BB-B6D3-353173626207    6.8     https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207        *EXPLOIT*
+|       CVE-2023-51385  6.5     https://vulners.com/cve/CVE-2023-51385
+|       CVE-2023-48795  5.9     https://vulners.com/cve/CVE-2023-48795
+|       CVE-2020-14145  5.9     https://vulners.com/cve/CVE-2020-14145
+|       CVE-2016-20012  5.3     https://vulners.com/cve/CVE-2016-20012
+|       CVE-2021-36368  3.7     https://vulners.com/cve/CVE-2021-36368
+|_      PACKETSTORM:140261      0.0     https://vulners.com/packetstorm/PACKETSTORM:140261    *EXPLOIT*
+25/tcp   open  smtp?
+53/tcp   open  domain     PowerDNS Authoritative Server 4.7.3
+80/tcp   open  http       LiteSpeed
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+| http-server-header:
+|   LiteSpeed
+|_  imunify360-webshield/1.21
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| fingerprint-strings:
+|   GetRequest:
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html
+|     last-modified: Sat, 10 Oct 2020 19:37:25 GMT
+|     accept-ranges: bytes
+|     content-length: 163
+|     date: Sat, 13 Jul 2024 09:47:44 GMT
+|     server: LiteSpeed
+|     <html><head><META HTTP-EQUIV="Cache-control" CONTENT="no-cache"><META HTTP-EQUIV="refresh" CONTENT="0;URL=/cgi-sys/defaultwebpage.cgi"></head><body></body></html>
+|   HTTPOptions:
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     allow: OPTIONS,HEAD,GET,POST
+|     content-length: 0
+|     date: Sat, 13 Jul 2024 09:47:44 GMT
+|_    server: LiteSpeed
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+110/tcp  open  pop3       Dovecot pop3d
+111/tcp  open  rpcbind
+143/tcp  open  imap       Dovecot imapd
+443/tcp  open  ssl/https?
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+465/tcp  open  ssl/smtp   Exim smtpd 4.96.2
+587/tcp  open  smtp       Exim smtpd 4.96.2
+993/tcp  open  imaps?
+995/tcp  open  pop3s?
+3306/tcp open  mysql      MySQL 5.5.5-10.3.39-MariaDB-cll-lve
+| vulners:
+|   cpe:/a:mariadb:mariadb:5.5.5-10.3.39-mariadb-cll-lve:
+|       SSV:92513       10.0    https://vulners.com/seebug/SSV:92513    *EXPLOIT*
+|       SSV:92510       10.0    https://vulners.com/seebug/SSV:92510    *EXPLOIT*
+|       PACKETSTORM:139491      10.0    https://vulners.com/packetstorm/PACKETSTORM:139491    *EXPLOIT*
+|       PACKETSTORM:139476      10.0    https://vulners.com/packetstorm/PACKETSTORM:139476    *EXPLOIT*
+|       EXPLOITPACK:55F22FE44A0D6F3F9005C334804B2317    10.0    https://vulners.com/exploitpack/EXPLOITPACK:55F22FE44A0D6F3F9005C334804B2317  *EXPLOIT*
+|       EXPLOITPACK:3D8D46697DAADEA8249E37B2A2F09AE3    10.0    https://vulners.com/exploitpack/EXPLOITPACK:3D8D46697DAADEA8249E37B2A2F09AE3  *EXPLOIT*
+|       CVE-2012-2750   10.0    https://vulners.com/cve/CVE-2012-2750
+|       CVE-2016-9843   9.8     https://vulners.com/cve/CVE-2016-9843
+|       CVE-2012-3163   9.0     https://vulners.com/cve/CVE-2012-3163
+|       CVE-2017-15365  8.8     https://vulners.com/cve/CVE-2017-15365
+|       CVE-2022-24052  7.8     https://vulners.com/cve/CVE-2022-24052
+|       CVE-2022-24051  7.8     https://vulners.com/cve/CVE-2022-24051
+|       CVE-2022-24050  7.8     https://vulners.com/cve/CVE-2022-24050
+|       CVE-2022-24048  7.8     https://vulners.com/cve/CVE-2022-24048
+|       CVE-2017-15945  7.8     https://vulners.com/cve/CVE-2017-15945
+|       CVE-2015-2325   7.8     https://vulners.com/cve/CVE-2015-2325
+|       CVE-2018-2755   7.7     https://vulners.com/cve/CVE-2018-2755
+|       CVE-2017-3309   7.7     https://vulners.com/cve/CVE-2017-3309
+|       CVE-2017-3308   7.7     https://vulners.com/cve/CVE-2017-3308
+|       CVE-2023-5157   7.5     https://vulners.com/cve/CVE-2023-5157
+|       CVE-2022-27449  7.5     https://vulners.com/cve/CVE-2022-27449
+|       CVE-2022-27385  7.5     https://vulners.com/cve/CVE-2022-27385
+|       CVE-2021-46669  7.5     https://vulners.com/cve/CVE-2021-46669
+|       CVE-2017-3302   7.5     https://vulners.com/cve/CVE-2017-3302
+|       CVE-2016-3471   7.5     https://vulners.com/cve/CVE-2016-3471
+|       CVE-2015-0411   7.5     https://vulners.com/cve/CVE-2015-0411
+|       CVE-2014-6500   7.5     https://vulners.com/cve/CVE-2014-6500
+|       CVE-2014-6491   7.5     https://vulners.com/cve/CVE-2014-6491
+|       CVE-2014-0001   7.5     https://vulners.com/cve/CVE-2014-0001
+|       CVE-2012-3158   7.5     https://vulners.com/cve/CVE-2012-3158
+|       CVE-2021-2144   7.2     https://vulners.com/cve/CVE-2021-2144
+|       CVE-2015-4819   7.2     https://vulners.com/cve/CVE-2015-4819
+|       CVE-2018-2562   7.1     https://vulners.com/cve/CVE-2018-2562
+|       EDB-ID:40679    7.0     https://vulners.com/exploitdb/EDB-ID:40679      *EXPLOIT*
+|       EDB-ID:40678    7.0     https://vulners.com/exploitdb/EDB-ID:40678      *EXPLOIT*
+|       CVE-2020-28912  7.0     https://vulners.com/cve/CVE-2020-28912
+|       CVE-2016-6664   7.0     https://vulners.com/cve/CVE-2016-6664
+|       1337DAY-ID-26205        6.9     https://vulners.com/zdt/1337DAY-ID-26205
+        *EXPLOIT*
+|       CVE-2014-6469   6.8     https://vulners.com/cve/CVE-2014-6469
+|       CVE-2013-0389   6.8     https://vulners.com/cve/CVE-2013-0389
+|       CVE-2013-0386   6.8     https://vulners.com/cve/CVE-2013-0386
+|       CVE-2013-0384   6.8     https://vulners.com/cve/CVE-2013-0384
+|       CVE-2012-5060   6.8     https://vulners.com/cve/CVE-2012-5060
+|       CVE-2012-3177   6.8     https://vulners.com/cve/CVE-2012-3177
+|       CVE-2012-1735   6.8     https://vulners.com/cve/CVE-2012-1735
+|       CVE-2012-1703   6.8     https://vulners.com/cve/CVE-2012-1703
+|       CVE-2017-3312   6.7     https://vulners.com/cve/CVE-2017-3312
+|       CVE-2017-3600   6.6     https://vulners.com/cve/CVE-2017-3600
+|       CVE-2013-0385   6.6     https://vulners.com/cve/CVE-2013-0385
+|       PACKETSTORM:118551      6.5     https://vulners.com/packetstorm/PACKETSTORM:118551    *EXPLOIT*
+|       CVE-2020-2780   6.5     https://vulners.com/cve/CVE-2020-2780
+|       CVE-2019-2974   6.5     https://vulners.com/cve/CVE-2019-2974
+|       CVE-2019-2805   6.5     https://vulners.com/cve/CVE-2019-2805
+|       CVE-2019-2740   6.5     https://vulners.com/cve/CVE-2019-2740
+|       CVE-2019-2529   6.5     https://vulners.com/cve/CVE-2019-2529
+|       CVE-2019-2455   6.5     https://vulners.com/cve/CVE-2019-2455
+|       CVE-2018-3133   6.5     https://vulners.com/cve/CVE-2018-3133
+|       CVE-2018-2819   6.5     https://vulners.com/cve/CVE-2018-2819
+|       CVE-2018-2817   6.5     https://vulners.com/cve/CVE-2018-2817
+|       CVE-2018-2668   6.5     https://vulners.com/cve/CVE-2018-2668
+|       CVE-2018-2665   6.5     https://vulners.com/cve/CVE-2018-2665
+|       CVE-2018-2640   6.5     https://vulners.com/cve/CVE-2018-2640
+|       CVE-2018-2622   6.5     https://vulners.com/cve/CVE-2018-2622
+|       CVE-2017-3453   6.5     https://vulners.com/cve/CVE-2017-3453
+|       CVE-2017-3258   6.5     https://vulners.com/cve/CVE-2017-3258
+|       CVE-2017-3244   6.5     https://vulners.com/cve/CVE-2017-3244
+|       CVE-2017-3238   6.5     https://vulners.com/cve/CVE-2017-3238
+|       CVE-2017-10384  6.5     https://vulners.com/cve/CVE-2017-10384
+|       CVE-2017-10379  6.5     https://vulners.com/cve/CVE-2017-10379
+|       CVE-2017-10378  6.5     https://vulners.com/cve/CVE-2017-10378
+|       CVE-2016-5626   6.5     https://vulners.com/cve/CVE-2016-5626
+|       CVE-2016-5624   6.5     https://vulners.com/cve/CVE-2016-5624
+|       CVE-2016-5612   6.5     https://vulners.com/cve/CVE-2016-5612
+|       CVE-2016-3492   6.5     https://vulners.com/cve/CVE-2016-3492
+|       CVE-2016-0502   6.5     https://vulners.com/cve/CVE-2016-0502
+|       CVE-2014-6555   6.5     https://vulners.com/cve/CVE-2014-6555
+|       CVE-2014-6530   6.5     https://vulners.com/cve/CVE-2014-6530
+|       CVE-2014-4258   6.5     https://vulners.com/cve/CVE-2014-4258
+|       CVE-2014-2436   6.5     https://vulners.com/cve/CVE-2014-2436
+|       CVE-2013-2378   6.5     https://vulners.com/cve/CVE-2013-2378
+|       CVE-2013-2375   6.5     https://vulners.com/cve/CVE-2013-2375
+|       CVE-2013-1552   6.5     https://vulners.com/cve/CVE-2013-1552
+|       CVE-2013-1531   6.5     https://vulners.com/cve/CVE-2013-1531
+|       CVE-2013-1521   6.5     https://vulners.com/cve/CVE-2013-1521
+|       CVE-2012-5612   6.5     https://vulners.com/cve/CVE-2012-5612
+|       CVE-2019-2503   6.4     https://vulners.com/cve/CVE-2019-2503
+|       CVE-2017-3291   6.3     https://vulners.com/cve/CVE-2017-3291
+|       CVE-2021-2011   5.9     https://vulners.com/cve/CVE-2021-2011
+|       CVE-2020-2574   5.9     https://vulners.com/cve/CVE-2020-2574
+|       CVE-2018-2761   5.9     https://vulners.com/cve/CVE-2018-2761
+|       CVE-2015-7744   5.9     https://vulners.com/cve/CVE-2015-7744
+|       CVE-2015-3152   5.9     https://vulners.com/cve/CVE-2015-3152
+|       CVE-2015-0501   5.7     https://vulners.com/cve/CVE-2015-0501
+|       CVE-2017-3265   5.6     https://vulners.com/cve/CVE-2017-3265
+|       CVE-2022-31624  5.5     https://vulners.com/cve/CVE-2022-31624
+|       CVE-2022-31623  5.5     https://vulners.com/cve/CVE-2022-31623
+|       CVE-2022-31622  5.5     https://vulners.com/cve/CVE-2022-31622
+|       CVE-2022-31621  5.5     https://vulners.com/cve/CVE-2022-31621
+|       CVE-2021-46667  5.5     https://vulners.com/cve/CVE-2021-46667
+|       CVE-2021-46666  5.5     https://vulners.com/cve/CVE-2021-46666
+|       CVE-2021-46659  5.5     https://vulners.com/cve/CVE-2021-46659
+|       CVE-2016-7440   5.5     https://vulners.com/cve/CVE-2016-7440
+|       CVE-2016-0651   5.5     https://vulners.com/cve/CVE-2016-0651
+|       CVE-2014-4260   5.5     https://vulners.com/cve/CVE-2014-4260
+|       CVE-2020-2752   5.3     https://vulners.com/cve/CVE-2020-2752
+|       CVE-2020-14550  5.3     https://vulners.com/cve/CVE-2020-14550
+|       CVE-2018-3174   5.3     https://vulners.com/cve/CVE-2018-3174
+|       CVE-2017-3636   5.3     https://vulners.com/cve/CVE-2017-3636
+|       CVE-2019-2739   5.1     https://vulners.com/cve/CVE-2019-2739
+|       CVE-2014-2440   5.1     https://vulners.com/cve/CVE-2014-2440
+|       SSV:60679       5.0     https://vulners.com/seebug/SSV:60679    *EXPLOIT*
+|       CVE-2018-3081   5.0     https://vulners.com/cve/CVE-2018-3081
+|       CVE-2015-2568   5.0     https://vulners.com/cve/CVE-2015-2568
+|       CVE-2013-3801   5.0     https://vulners.com/cve/CVE-2013-3801
+|       CVE-2013-1861   5.0     https://vulners.com/cve/CVE-2013-1861
+|       CVE-2012-1702   5.0     https://vulners.com/cve/CVE-2012-1702
+|       CVE-2020-2812   4.9     https://vulners.com/cve/CVE-2020-2812
+|       CVE-2019-2737   4.9     https://vulners.com/cve/CVE-2019-2737
+|       CVE-2019-2627   4.9     https://vulners.com/cve/CVE-2019-2627
+|       CVE-2019-2481   4.9     https://vulners.com/cve/CVE-2019-2481
+|       CVE-2018-3282   4.9     https://vulners.com/cve/CVE-2018-3282
+|       CVE-2018-3063   4.9     https://vulners.com/cve/CVE-2018-3063
+|       CVE-2018-2781   4.9     https://vulners.com/cve/CVE-2018-2781
+|       CVE-2017-3641   4.9     https://vulners.com/cve/CVE-2017-3641
+|       CVE-2017-3456   4.9     https://vulners.com/cve/CVE-2017-3456
+|       CVE-2016-5629   4.9     https://vulners.com/cve/CVE-2016-5629
+|       CVE-2013-5807   4.9     https://vulners.com/cve/CVE-2013-5807
+|       CVE-2017-3313   4.7     https://vulners.com/cve/CVE-2017-3313
+|       CVE-2016-0642   4.7     https://vulners.com/cve/CVE-2016-0642
+|       CVE-2015-4879   4.6     https://vulners.com/cve/CVE-2015-4879
+|       CVE-2013-1523   4.6     https://vulners.com/cve/CVE-2013-1523
+|       CVE-2005-0004   4.6     https://vulners.com/cve/CVE-2005-0004
+|       CVE-2019-2614   4.4     https://vulners.com/cve/CVE-2019-2614
+|       CVE-2018-2771   4.4     https://vulners.com/cve/CVE-2018-2771
+|       CVE-2017-3243   4.4     https://vulners.com/cve/CVE-2017-3243
+|       CVE-2016-5584   4.4     https://vulners.com/cve/CVE-2016-5584
+|       CVE-2018-3058   4.3     https://vulners.com/cve/CVE-2018-3058
+|       CVE-2018-2813   4.3     https://vulners.com/cve/CVE-2018-2813
+|       CVE-2017-3651   4.3     https://vulners.com/cve/CVE-2017-3651
+|       CVE-2017-3464   4.3     https://vulners.com/cve/CVE-2017-3464
+|       CVE-2015-2620   4.3     https://vulners.com/cve/CVE-2015-2620
+|       CVE-2015-0382   4.3     https://vulners.com/cve/CVE-2015-0382
+|       CVE-2015-0381   4.3     https://vulners.com/cve/CVE-2015-0381
+|       CVE-2014-6559   4.3     https://vulners.com/cve/CVE-2014-6559
+|       CVE-2014-6507   4.3     https://vulners.com/cve/CVE-2014-6507
+|       CVE-2014-6496   4.3     https://vulners.com/cve/CVE-2014-6496
+|       CVE-2014-6495   4.3     https://vulners.com/cve/CVE-2014-6495
+|       CVE-2014-6494   4.3     https://vulners.com/cve/CVE-2014-6494
+|       CVE-2014-6478   4.3     https://vulners.com/cve/CVE-2014-6478
+|       CVE-2013-0383   4.3     https://vulners.com/cve/CVE-2013-0383
+|       CVE-2017-10268  4.1     https://vulners.com/cve/CVE-2017-10268
+|       CVE-2014-4274   4.1     https://vulners.com/cve/CVE-2014-4274
+|       SSV:60908       4.0     https://vulners.com/seebug/SSV:60908    *EXPLOIT*
+|       SSV:60600       4.0     https://vulners.com/seebug/SSV:60600    *EXPLOIT*
+|       SSV:60599       4.0     https://vulners.com/seebug/SSV:60599    *EXPLOIT*
+|       SSV:60598       4.0     https://vulners.com/seebug/SSV:60598    *EXPLOIT*
+|       SSV:60597       4.0     https://vulners.com/seebug/SSV:60597    *EXPLOIT*
+|       SSV:60501       4.0     https://vulners.com/seebug/SSV:60501    *EXPLOIT*
+|       PACKETSTORM:137232      4.0     https://vulners.com/packetstorm/PACKETSTORM:137232    *EXPLOIT*
+|       PACKETSTORM:118553      4.0     https://vulners.com/packetstorm/PACKETSTORM:118553    *EXPLOIT*
+|       EXPLOITPACK:4856CE5DA621AD64273C51D5420971CA    4.0     https://vulners.com/exploitpack/EXPLOITPACK:4856CE5DA621AD64273C51D5420971CA  *EXPLOIT*
+|       EDB-ID:39867    4.0     https://vulners.com/exploitdb/EDB-ID:39867      *EXPLOIT*
+|       CVE-2017-3318   4.0     https://vulners.com/cve/CVE-2017-3318
+|       CVE-2017-3317   4.0     https://vulners.com/cve/CVE-2017-3317
+|       CVE-2016-0616   4.0     https://vulners.com/cve/CVE-2016-0616
+|       CVE-2015-4870   4.0     https://vulners.com/cve/CVE-2015-4870
+|       CVE-2015-4858   4.0     https://vulners.com/cve/CVE-2015-4858
+|       CVE-2015-4830   4.0     https://vulners.com/cve/CVE-2015-4830
+|       CVE-2015-4826   4.0     https://vulners.com/cve/CVE-2015-4826
+|       CVE-2015-4816   4.0     https://vulners.com/cve/CVE-2015-4816
+|       CVE-2015-4815   4.0     https://vulners.com/cve/CVE-2015-4815
+|       CVE-2015-4802   4.0     https://vulners.com/cve/CVE-2015-4802
+|       CVE-2015-4752   4.0     https://vulners.com/cve/CVE-2015-4752
+|       CVE-2015-2648   4.0     https://vulners.com/cve/CVE-2015-2648
+|       CVE-2015-2643   4.0     https://vulners.com/cve/CVE-2015-2643
+|       CVE-2015-2582   4.0     https://vulners.com/cve/CVE-2015-2582
+|       CVE-2015-2573   4.0     https://vulners.com/cve/CVE-2015-2573
+|       CVE-2015-2571   4.0     https://vulners.com/cve/CVE-2015-2571
+|       CVE-2015-0441   4.0     https://vulners.com/cve/CVE-2015-0441
+|       CVE-2015-0433   4.0     https://vulners.com/cve/CVE-2015-0433
+|       CVE-2015-0432   4.0     https://vulners.com/cve/CVE-2015-0432
+|       CVE-2015-0391   4.0     https://vulners.com/cve/CVE-2015-0391
+|       CVE-2014-6520   4.0     https://vulners.com/cve/CVE-2014-6520
+|       CVE-2014-6505   4.0     https://vulners.com/cve/CVE-2014-6505
+|       CVE-2014-6484   4.0     https://vulners.com/cve/CVE-2014-6484
+|       CVE-2014-6464   4.0     https://vulners.com/cve/CVE-2014-6464
+|       CVE-2014-4287   4.0     https://vulners.com/cve/CVE-2014-4287
+|       CVE-2014-4207   4.0     https://vulners.com/cve/CVE-2014-4207
+|       CVE-2014-2494   4.0     https://vulners.com/cve/CVE-2014-2494
+|       CVE-2014-2419   4.0     https://vulners.com/cve/CVE-2014-2419
+|       CVE-2014-0412   4.0     https://vulners.com/cve/CVE-2014-0412
+|       CVE-2014-0402   4.0     https://vulners.com/cve/CVE-2014-0402
+|       CVE-2014-0401   4.0     https://vulners.com/cve/CVE-2014-0401
+|       CVE-2014-0386   4.0     https://vulners.com/cve/CVE-2014-0386
+|       CVE-2014-0384   4.0     https://vulners.com/cve/CVE-2014-0384
+|       CVE-2013-5891   4.0     https://vulners.com/cve/CVE-2013-5891
+|       CVE-2013-3839   4.0     https://vulners.com/cve/CVE-2013-3839
+|       CVE-2013-3809   4.0     https://vulners.com/cve/CVE-2013-3809
+|       CVE-2013-3808   4.0     https://vulners.com/cve/CVE-2013-3808
+|       CVE-2013-3805   4.0     https://vulners.com/cve/CVE-2013-3805
+|       CVE-2013-3804   4.0     https://vulners.com/cve/CVE-2013-3804
+|       CVE-2013-3802   4.0     https://vulners.com/cve/CVE-2013-3802
+|       CVE-2013-3794   4.0     https://vulners.com/cve/CVE-2013-3794
+|       CVE-2013-3793   4.0     https://vulners.com/cve/CVE-2013-3793
+|       CVE-2013-3783   4.0     https://vulners.com/cve/CVE-2013-3783
+|       CVE-2013-2392   4.0     https://vulners.com/cve/CVE-2013-2392
+|       CVE-2013-2389   4.0     https://vulners.com/cve/CVE-2013-2389
+|       CVE-2013-2376   4.0     https://vulners.com/cve/CVE-2013-2376
+|       CVE-2013-1555   4.0     https://vulners.com/cve/CVE-2013-1555
+|       CVE-2013-1544   4.0     https://vulners.com/cve/CVE-2013-1544
+|       CVE-2013-1532   4.0     https://vulners.com/cve/CVE-2013-1532
+|       CVE-2013-1526   4.0     https://vulners.com/cve/CVE-2013-1526
+|       CVE-2013-1512   4.0     https://vulners.com/cve/CVE-2013-1512
+|       CVE-2013-0371   4.0     https://vulners.com/cve/CVE-2013-0371
+|       CVE-2013-0368   4.0     https://vulners.com/cve/CVE-2013-0368
+|       CVE-2013-0367   4.0     https://vulners.com/cve/CVE-2013-0367
+|       CVE-2012-5627   4.0     https://vulners.com/cve/CVE-2012-5627
+|       CVE-2012-5614   4.0     https://vulners.com/cve/CVE-2012-5614
+|       CVE-2012-3180   4.0     https://vulners.com/cve/CVE-2012-3180
+|       CVE-2012-3173   4.0     https://vulners.com/cve/CVE-2012-3173
+|       CVE-2012-3166   4.0     https://vulners.com/cve/CVE-2012-3166
+|       CVE-2012-3150   4.0     https://vulners.com/cve/CVE-2012-3150
+|       CVE-2012-1757   4.0     https://vulners.com/cve/CVE-2012-1757
+|       CVE-2012-1756   4.0     https://vulners.com/cve/CVE-2012-1756
+|       CVE-2012-1734   4.0     https://vulners.com/cve/CVE-2012-1734
+|       CVE-2012-1705   4.0     https://vulners.com/cve/CVE-2012-1705
+|       CVE-2012-1697   4.0     https://vulners.com/cve/CVE-2012-1697
+|       CVE-2012-1690   4.0     https://vulners.com/cve/CVE-2012-1690
+|       CVE-2012-1689   4.0     https://vulners.com/cve/CVE-2012-1689
+|       CVE-2012-1688   4.0     https://vulners.com/cve/CVE-2012-1688
+|       CVE-2012-0578   4.0     https://vulners.com/cve/CVE-2012-0578
+|       CVE-2012-0574   4.0     https://vulners.com/cve/CVE-2012-0574
+|       CVE-2012-0572   4.0     https://vulners.com/cve/CVE-2012-0572
+|       CVE-2012-0540   4.0     https://vulners.com/cve/CVE-2012-0540
+|       1337DAY-ID-26031        4.0     https://vulners.com/zdt/1337DAY-ID-26031
+        *EXPLOIT*
+|       CVE-2021-2007   3.7     https://vulners.com/cve/CVE-2021-2007
+|       CVE-2020-2922   3.7     https://vulners.com/cve/CVE-2020-2922
+|       CVE-2016-0610   3.5     https://vulners.com/cve/CVE-2016-0610
+|       CVE-2015-4913   3.5     https://vulners.com/cve/CVE-2015-4913
+|       CVE-2015-4864   3.5     https://vulners.com/cve/CVE-2015-4864
+|       CVE-2015-4861   3.5     https://vulners.com/cve/CVE-2015-4861
+|       CVE-2015-4807   3.5     https://vulners.com/cve/CVE-2015-4807
+|       CVE-2015-4757   3.5     https://vulners.com/cve/CVE-2015-4757
+|       CVE-2015-0505   3.5     https://vulners.com/cve/CVE-2015-0505
+|       CVE-2015-0499   3.5     https://vulners.com/cve/CVE-2015-0499
+|       CVE-2015-0374   3.5     https://vulners.com/cve/CVE-2015-0374
+|       CVE-2014-6568   3.5     https://vulners.com/cve/CVE-2014-6568
+|       CVE-2014-2438   3.5     https://vulners.com/cve/CVE-2014-2438
+|       CVE-2014-2430   3.5     https://vulners.com/cve/CVE-2014-2430
+|       CVE-2014-0437   3.5     https://vulners.com/cve/CVE-2014-0437
+|       CVE-2013-3812   3.5     https://vulners.com/cve/CVE-2013-3812
+|       CVE-2013-1548   3.5     https://vulners.com/cve/CVE-2013-1548
+|       CVE-2013-1511   3.5     https://vulners.com/cve/CVE-2013-1511
+|       CVE-2012-5096   3.5     https://vulners.com/cve/CVE-2012-5096
+|       CVE-2012-3197   3.5     https://vulners.com/cve/CVE-2012-3197
+|       CVE-2012-3167   3.5     https://vulners.com/cve/CVE-2012-3167
+|       CVE-2018-3066   3.3     https://vulners.com/cve/CVE-2018-3066
+|       CVE-2014-6463   3.3     https://vulners.com/cve/CVE-2014-6463
+|       CVE-2014-0393   3.3     https://vulners.com/cve/CVE-2014-0393
+|       CVE-2018-2767   3.1     https://vulners.com/cve/CVE-2018-2767
+|       CVE-2017-3653   3.1     https://vulners.com/cve/CVE-2017-3653
+|       CVE-2013-2391   3.0     https://vulners.com/cve/CVE-2013-2391
+|       CVE-2015-4836   2.8     https://vulners.com/cve/CVE-2015-4836
+|       CVE-2014-4243   2.8     https://vulners.com/cve/CVE-2014-4243
+|       CVE-2014-2432   2.8     https://vulners.com/cve/CVE-2014-2432
+|       CVE-2014-0420   2.8     https://vulners.com/cve/CVE-2014-0420
+|       CVE-2013-1506   2.8     https://vulners.com/cve/CVE-2013-1506
+|       CVE-2014-2431   2.6     https://vulners.com/cve/CVE-2014-2431
+|       CVE-2013-5908   2.6     https://vulners.com/cve/CVE-2013-5908
+|       CVE-2014-6551   2.1     https://vulners.com/cve/CVE-2014-6551
+|       CVE-2012-3160   2.1     https://vulners.com/cve/CVE-2012-3160
+|       CVE-2015-4792   1.7     https://vulners.com/cve/CVE-2015-4792
+|_      CVE-2013-1502   1.5     https://vulners.com/cve/CVE-2013-1502
+5000/tcp open  upnp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94%I=7%D=7/13%Time=66924D40%P=i686-pc-windows-windows%r(
+SF:GetRequest,173,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nconte
+SF:nt-type:\x20text/html\r\nlast-modified:\x20Sat,\x2010\x20Oct\x202020\x2
+SF:019:37:25\x20GMT\r\naccept-ranges:\x20bytes\r\ncontent-length:\x20163\r
+SF:\ndate:\x20Sat,\x2013\x20Jul\x202024\x2009:47:44\x20GMT\r\nserver:\x20L
+SF:iteSpeed\r\n\r\n<html><head><META\x20HTTP-EQUIV=\"Cache-control\"\x20CO
+SF:NTENT=\"no-cache\"><META\x20HTTP-EQUIV=\"refresh\"\x20CONTENT=\"0;URL=/
+SF:cgi-sys/defaultwebpage\.cgi\"></head><body></body></html>\n")%r(HTTPOpt
+SF:ions,8F,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nallow:\x20OP
+SF:TIONS,HEAD,GET,POST\r\ncontent-length:\x200\r\ndate:\x20Sat,\x2013\x20J
+SF:ul\x202024\x2009:47:44\x20GMT\r\nserver:\x20LiteSpeed\r\n\r\n");
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+Service Info: Host: vn187.dvd.vn
+
+TRACEROUTE (using port 5900/tcp)
+HOP RTT     ADDRESS
+1   1.00 ms 192.168.1.1
+2   3.00 ms static.vnpt.vn (123.29.4.210)
+3   3.00 ms static.vnpt.vn (113.171.27.173)
+4   ... 5
+6   7.00 ms static.vnpt.vn (113.171.36.102)
+7   6.00 ms static.vnpt.vn (123.29.16.74)
+8   6.00 ms 113.22.4.111
+9   6.00 ms 113.22.4.111
+10  6.00 ms 42.112.4.26
+11  ... 30
